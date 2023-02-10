@@ -1,0 +1,15 @@
+/home/sneg/Documents/C#/Descending/obj/Debug/net7.0/Descending.csproj.AssemblyReference.cache
+/home/sneg/Documents/C#/Descending/obj/Debug/net7.0/Descending.GeneratedMSBuildEditorConfig.editorconfig
+/home/sneg/Documents/C#/Descending/obj/Debug/net7.0/Descending.AssemblyInfoInputs.cache
+/home/sneg/Documents/C#/Descending/obj/Debug/net7.0/Descending.AssemblyInfo.cs
+/home/sneg/Documents/C#/Descending/obj/Debug/net7.0/Descending.csproj.CoreCompileInputs.cache
+/home/sneg/Documents/C#/Descending/bin/Debug/net7.0/Descending
+/home/sneg/Documents/C#/Descending/bin/Debug/net7.0/Descending.deps.json
+/home/sneg/Documents/C#/Descending/bin/Debug/net7.0/Descending.runtimeconfig.json
+/home/sneg/Documents/C#/Descending/bin/Debug/net7.0/Descending.dll
+/home/sneg/Documents/C#/Descending/bin/Debug/net7.0/Descending.pdb
+/home/sneg/Documents/C#/Descending/obj/Debug/net7.0/Descending.dll
+/home/sneg/Documents/C#/Descending/obj/Debug/net7.0/refint/Descending.dll
+/home/sneg/Documents/C#/Descending/obj/Debug/net7.0/Descending.pdb
+/home/sneg/Documents/C#/Descending/obj/Debug/net7.0/Descending.genruntimeconfig.cache
+/home/sneg/Documents/C#/Descending/obj/Debug/net7.0/ref/Descending.dll
