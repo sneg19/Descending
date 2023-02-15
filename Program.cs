@@ -34,17 +34,58 @@ void PrintArray(int[,] inArray) // Вывод массива на консоль
     }
 }
 
+int[] BubbleSort(int[] inArray)
+{
+    for (int i = 0; i < inArray.Length; i++)
+    {
+        for (int j = 0; j < inArray.Length - i - 1; j++)
+        {
+            if (inArray[j] > inArray[j + 1])
+            {
+                int temp = inArray[j];
+                inArray[j] = inArray[j + 1];
+                inArray[j + 1] = temp;
+            }
+        }
+    }
+    return inArray;
+}
+
+/*int[] DimensionalArray (int[,] matrix)
+{
+    int[] DimensionalArray = new int[matrix.GetLength(0)];
+    for (int row = 0; row < matrix.GetLength(0); row++)
+    {
+        for (int column = 0; column < matrix.GetLength(1); column++)
+        {
+            DimensionalArray[column] = matrix[row, column]; 
+        }
+    }
+    DimensionalArray = BubbleSort(DimensionalArray);
+    return DimensionalArray;
+}*/
+
+
 int[,] RowSort(int[,] matrix)
 {
     for(int row = 0; row < matrix.GetLength(0); row++)  
     {
-        for(int column = 0; column < matrix.GetLength(1) - column; column++)
+        for(int column = 0; column < matrix.GetLength(1); column++)
         {
-            int max = matrix[row, column];
-            if(max < matrix[row, column + 1])
+            for (int j = 0; j < matrix.GetLength(1) - column - 1; j++)
+        {
+            if (matrix[row ,j] < matrix[row, j + 1])
+            {
+                int temp = matrix[row, j];
+                matrix[row, j] = matrix[row, j + 1];
+                matrix[row, j + 1] = temp;
+            }
+        }
+            /*int max = matrix[row, column];
+            if(max > matrix[row, column])
             { 
                 matrix[row, column] = matrix[row, column + 1];
-            }
+            }*/
         }
     }
     return matrix;
@@ -54,9 +95,12 @@ void Main()
 {
     int[,] myMatrix = GetArray(4, 5, 0, 10);
     PrintArray(myMatrix);
-    int[,] sortMatrix = RowSort(myMatrix);
+    int[,] array = RowSort(myMatrix);
     Console.WriteLine();
-    PrintArray(sortMatrix);
+    PrintArray(array);
+    // int[,] sortMatrix = RowSort(myMatrix);
+    // Console.WriteLine();
+    // PrintArray(sortMatrix);*/
 }
 
 Main();
